@@ -1,0 +1,177 @@
+.container_about_container {
+  display: grid;
+  grid-template-columns: 12% 70%;
+
+  gap: 15%;
+}
+
+.abount_me {
+  margin-left: 4rem;
+  width: 100%;
+  border-radius: 2rem;
+  height: 20rem;
+
+  background: linear-gradient(
+    45deg,
+    transparent,
+    var(--color-primary),
+    transparent
+  );
+  display: grid;
+  place-items: center;
+}
+
+.img-sak-about {
+  height: 100%;
+  height: 20rem;
+  border-radius: 2rem;
+
+  background-color: rgb(13, 78, 172);
+
+  object-fit: contain;
+  transform: rotate(10deg);
+  transition: 1s;
+}
+
+.img-sak-about:hover {
+  border-radius: 2rem;
+  overflow: hidden;
+  transform: rotate(0deg);
+}
+
+.about_card_one {
+  display: flex;
+  flex-direction: column;
+}
+
+.about_card_inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10%;
+}
+
+.about_card {
+  background-color: var(--color-bg-varient);
+  border: 1px solid black;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 1rem;
+}
+
+small {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.app-icons {
+  font-size: 3rem;
+}
+
+.img-sak-about {
+  object-fit: contain;
+  height: 100%;
+  margin: 10px;
+}
+
+.paragrahsakthi {
+  margin-top: 2rem;
+  align-self: center;
+}
+
+.btn-primary {
+  margin-top: 1rem;
+  align-self: center;
+  margin-left: 45%;
+}
+.paragrahsakthi_1 {
+  background-color: var(--color-bg-varient);
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 1px solid black;
+}
+
+@media screen and (max-width: 1280px) {
+  .container_about_container {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    left: 0;
+  }
+
+  .abount_me {
+    width: 100%;
+    border-radius: 2rem;
+    height: 20rem;
+
+    background-color: red;
+    display: grid;
+    place-items: center;
+  }
+
+  .img-sak-about {
+    height: 100%;
+    height: 20rem;
+    border-radius: 2rem;
+
+    background-color: rgb(13, 78, 172);
+
+    object-fit: contain;
+    transform: rotate(10deg);
+    transition: 1s;
+  }
+
+  .img-sak-about:hover {
+    border-radius: 2rem;
+    overflow: hidden;
+    transform: rotate(0deg);
+  }
+
+  .about_card_one {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about_card_inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10%;
+  }
+
+  .about_card {
+    background-color: var(--color-bg-varient);
+    border: 1px solid black;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 1rem;
+  }
+
+  small {
+    font-family: Georgia, "Times New Roman", Times, serif;
+  }
+
+  .app-icons {
+    font-size: 3rem;
+  }
+
+  .img-sak-about {
+    object-fit: contain;
+    height: 100%;
+    margin: 10px;
+  }
+
+  .paragrahsakthi {
+    margin-top: 2rem;
+    align-self: center;
+  }
+
+  .btn-primary {
+    margin-top: 1rem;
+    align-self: center;
+    margin-left: 45%;
+  }
+  .paragrahsakthi_1 {
+    background-color: var(--color-bg-varient);
+    padding: 2rem;
+    border-radius: 1rem;
+    border: 1px solid black;
+  }
+}

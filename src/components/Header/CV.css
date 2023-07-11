@@ -1,0 +1,42 @@
+.shining-button {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  text-decoration: solid;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.shining-button:before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    45deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.5) 50%,
+    transparent 100%
+  );
+  opacity: 0.3;
+  transform: rotate(-45deg);
+  animation: shining-animation 2s linear infinite;
+}
+
+@keyframes shining-animation {
+  0% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
